@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Bookstore</h1>
+
+    <h2>Add / Update Book</h2>
+    <form id="bookForm">
+        <input type="hidden" id="bookId"> <!-- Hidden field for editing -->
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <input type="number" id="year" placeholder="Published Year" required>
+        <input type="number" id="price" placeholder="Price" required>
+        <button type="submit">Save Book</button>
+        <input type="text" id="searchInput" placeholder="Search by title..." onkeyup="searchBooks()">
+        <div id="booksList"></div>
+    </form>
+
+    <h2>Book List</h2>
+    <div id="booksList"></div>
+</body>
+</html>

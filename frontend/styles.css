@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Form Container */
+form {
+    background: whitesmoke;
+    padding: 25px;
+    max-width: 450px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #4CAF50;
+}
+
+/* Input Fields */
+input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid pink;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: hotpink;
+    box-shadow: 0px 0px 8px rgba(255, 20, 147, 0.5);
+}
+
+/* Buttons */
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: hotpink;
+    transform: scale(1.05);
+}
+
+/* Book List Table */
+#booksTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+#booksTable thead {
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+}
+
+#booksTable th, #booksTable td {
+    padding: 12px;
+    border: 2px solid burlywood;
+    text-align: center;
+}
+
+/* Table Rows */
+#booksTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#booksTable tbody tr:hover {
+    background-color: hotpink;
+    color: white;
+}
+
+/* Edit and Delete Buttons */
+button.edit-btn {
+    background-color: #ffa600;
+}
+
+button.edit-btn:hover {
+    background-color: #626568;
+}
+
+button.delete-btn {
+    background-color: #dc35bd;
+}
+
+button.delete-btn:hover {
+    background-color: #2370c8;
+}
+
+/* Search Bar */
+#searchInput {
+    width: 100%;
+    max-width: 420px;
+    padding: 12px;
+    margin: 12px auto;
+    display: block;
+    border: 2px solid #7d6262;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+#searchInput:focus {
+    border-color: hotpink;
+    box-shadow: 0px 0px 10px rgba(255, 20, 147, 0.4);
+}
